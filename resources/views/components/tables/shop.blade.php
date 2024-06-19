@@ -1,6 +1,7 @@
 {{-- Add Modal --}}
 
 <div id="addModal" tabindex="-1">
+    <h1>LGU Oil Stock: {{$finalInventory}}</h1>
     <div>
         <div class="modal-content">
             <div class="modal-header">
@@ -8,11 +9,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 needs-validation" method="POST" action="{{route('superadmin.add')}}" novalidate>
+                <form class="row g-3 needs-validation" method="POST" action="{{route('transaction.buy')}}" novalidate>
                     @csrf
                     <div class="col-md-5">
                         <label for="first_name" class="form-label">Quantity</label>
-                        <input type="number" class="form-control" name="name" placeholder="Enter quantity"
+                        <input type="number" class="form-control" name="quantity" placeholder="Enter quantity"
                             required>
                         <div class="invalid-feedback">
                             Please enter quantity.
@@ -20,7 +21,7 @@
                     </div>
                     <div class="col-md-5">
                         <label for="email" class="form-label">Purpose</label>
-                        <input type="text" class="form-control" name="reason" placeholder="Purpose of purchase"
+                        <input type="text" class="form-control" name="purpose" placeholder="Purpose of purchase"
                             required>
                         <div class="invalid-feedback">
                             Please enter your purpose.
