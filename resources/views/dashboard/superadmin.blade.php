@@ -1,6 +1,4 @@
 <div class="row">
-    {{-- Left side columns --}}
-    {{-- Add Modal --}}
     <div class="col-lg-8">
         @yield('user-management')
     </div>{{-- End Left side columns --}}
