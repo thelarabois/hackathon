@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class UsedOil extends Model
 {
     use HasFactory;
-    use Notifiable;
+    protected $table = "used_oils";
 
     /**
      * The attributes that are mass assignable.
@@ -17,7 +17,7 @@ class UsedOil extends Model
      */
     protected $fillable = [
         'quantity',
-        'seller',
+        'seller_id',
         'price',
         'quality',
     ];

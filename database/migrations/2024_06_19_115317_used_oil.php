@@ -18,7 +18,6 @@ return new class extends Migration
             $table->unsignedBigInteger('seller_id');
             $table->string('quality');
             $table->foreign('seller_id')->references('id')->on('users')->onDelete('cascade');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
