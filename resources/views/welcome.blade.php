@@ -70,7 +70,7 @@
             </nav>
             @if (Route::has('login'))
                 @auth
-                    <a class="btn-getstarted" href="{{ url('/dashboard') }}">Dashboard</a>
+                    <a class="btn-getstarted" href="{{ url('/user') }}">Dashboard</a>
                 @else
                     <a class="btn-getstarted" href="{{ route('login') }}">Get Started</a>
                 @endauth

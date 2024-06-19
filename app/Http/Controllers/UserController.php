@@ -8,6 +8,7 @@ use Illuminate\Validation\Rules;
 use App\Models\User;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Exception;
 
 class UserController extends Controller
@@ -28,16 +29,10 @@ class UserController extends Controller
         try {
             $validator = Validator::make($request->all(), [
                 'name' => ['required', 'string', 'max:255'],
-                'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-                'password' => ['required', 'confirmed', Rules\Password::defaults()],
-                'role' => ['required', 'string', 'max:255', 'in:admin'],
-                'coins' => ['nullable', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255'],
             ]);
 
             if($validator->fails()) {
-                if ($validator->errors()->has('password')) {
-                    return redirect()->back()->with('error', 'password already taken.');
-                }
                 return redirect()->back()->with('error', 'Invalid input');
             }
 
@@ -52,9 +47,9 @@ class UserController extends Controller
             $user = new User();
             $user->name = $request->name;
             $user->email = $request->email;
-            $user->password = $request->password;
-            $user->role = $request->role;
-            $user->coins = $request->coins;
+            $user->password = Hash::make("password");
+            $user->role = "admin";
+            $user->coins = 0;
             $user->save();
 
             return redirect()->back()->with('success', 'User added successfully');
@@ -76,15 +71,9 @@ class UserController extends Controller
             $validator = Validator::make($request->all(), [
                 'name' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-                'password' => ['required', 'confirmed', Rules\Password::defaults()],
-                'role' => ['required', 'string', 'max:255', 'in:admin'],
-                'coins' => ['nullable', 'string', 'max:255'],
             ]);
 
             if($validator->fails()) {
-                if ($validator->errors()->has('password')) {
-                    return redirect()->back()->with('error', 'password already taken.');
-                }
                 return redirect()->back()->with('error', 'Invalid input');
             }
 
@@ -101,9 +90,6 @@ class UserController extends Controller
 
             $user->name = $request->name;
             $user->email = $request->email;
-            $user->password = $request->password;
-            $user->role = $request->role;
-            $user->coins = $request->coins;
             $user->save();
 
             return redirect()->back()->with('success', 'User updated successfully');
