@@ -20,6 +20,7 @@ class UsedOil extends Model
         'seller_id',
         'price',
         'quality',
+        'status'
     ];
 
     public function seller()

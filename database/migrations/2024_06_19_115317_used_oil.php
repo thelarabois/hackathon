@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('used_oils', function (Blueprint $table) {
             $table->id();
             $table->integer('quantity');
-            $table->integer('price');
+            $table->integer('price')->nullable();
             $table->unsignedBigInteger('seller_id');
-            $table->string('quality');
+            $table->string('quality')->nullable();
+            $table->string('status');
             $table->foreign('seller_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });

@@ -13,7 +13,7 @@ class SellController extends Controller
      */
     public function index()
     {
-        //
+        return view('sell.index');
     }
 
     /**
@@ -34,7 +34,7 @@ class SellController extends Controller
             'quantity' => 'required|numeric',
             'seller_id' => 'required|numeric|exists:users,id',
             'price' => 'nullable|numeric',
-            'quality' => 'required|string',
+            'quality' => 'nullable|string',
         ]);
 
         $student = UsedOil::create([
@@ -42,10 +42,12 @@ class SellController extends Controller
             'seller_id' => $request->seller_id,
             'price' => $request->price,
             'quality' => $request->quality,
+            'status' => 'Pending',
         ]);
 
         // wala pay view para sa sales sa used oil! 
         // cannot direct it 
+        return view('sell.index');
         
     }
 
