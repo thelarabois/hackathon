@@ -1035,6 +1035,29 @@ h6 {
   max-width: 60px;
 }
 
+.leaderboard-table {
+  width: 100%;
+  /* max-width: 800px; */
+  margin: auto;
+  /* margin-top: 50px; */
+}
+.leaderboard-table thead {
+  background-color: #f8f9fa;
+}
+.leaderboard-table th, .leaderboard-table td {
+  vertical-align: middle;
+}
+.leaderboard-table .badge-medal {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leaderboard-table .btn-follow {
+  background-color: #ffd154;
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Icons list page
 --------------------------------------------------------------*/

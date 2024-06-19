@@ -111,23 +111,23 @@
                 <div class="row gy-4">
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/brands/jollibee.png" class="img-fluid" alt="">
+                        <img src="assets/img/brands/1.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                        <img src="assets/img/brands/2.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                        <img src="assets/img/brands/3.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                        <img src="assets/img/brands/4.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                        <img src="assets/img/brands/5.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-2 col-md-3 col-6 client-logo">
