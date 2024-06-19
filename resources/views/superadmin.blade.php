@@ -2,7 +2,6 @@
     {{-- Left side columns --}}
     <div class="col-lg-8">
         <x-tables-user />
-    
     </div>{{-- End Left side columns --}}
 
     {{-- Right side columns --}}
