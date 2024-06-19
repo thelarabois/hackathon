@@ -1,6 +1,8 @@
 @extends('dashboard.index')
 @section('content')
-@include('components.tables.shop')
+<div class="col-lg-12">
+@include('components.cards.shop')
+</div>
 @endsection
 
 

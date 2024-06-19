@@ -5,6 +5,8 @@
             Sell
         </button>
     </div>
-    @include('components.modals.sell_inventory')
-    @include('components.tables.inventory')
+    <div class="col-lg-12">
+        @include('components.modals.sell_inventory')
+        @include('components.tables.inventory')
+    </div>
 @endsection
