@@ -1,6 +1,62 @@
 <div class="row">
     <div class="col-lg-8">
-        @yield('user-management')
+        @hasSection('user-management')
+            @yield('user-management')
+        @else
+            <div class="card info-card sales-card">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>
+                                000
+                            </h6>
+                            <span class="text-muted small pt-2 ps-1">total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card info-card sales-card">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>
+                                000
+                            </h6>
+                            <span class="text-muted small pt-2 ps-1">total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card info-card sales-card">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>
+                                000
+                            </h6>
+                            <span class="text-muted small pt-2 ps-1">total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>{{-- End Left side columns --}}
 
     {{-- Right side columns --}}
