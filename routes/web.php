@@ -15,6 +15,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 require_once __DIR__.'/user.php';
+require_once __DIR__. '/dashboard.php';
 require_once __DIR__. '/inventory.php';
 require_once __DIR__. '/transaction.php';
 require_once __DIR__. '/rewards.php';

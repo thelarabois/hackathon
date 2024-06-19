@@ -7,14 +7,30 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 needs-validation" method="POST" action="{{route('user.add')}}" novalidate>
+                <form class="row g-3 needs-validation" method="POST" novalidate>
                     @csrf
                     <div class="col-md-4">
                         <label for="first_name" class="form-label">First Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter your first name"
+                        <input type="text" class="form-control" name="first_name" placeholder="Enter your first name"
                             required>
                         <div class="invalid-feedback">
-                            Please enter your name.
+                            Please enter your first name.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="middle_name" class="form-label">Middle Name</label>
+                        <input type="text" class="form-control" name="middle_name"
+                            placeholder="Enter your middle name" required>
+                        <div class="invalid-feedback">
+                            Please enter your middle name.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last_name" placeholder="Enter your last name"
+                            required>
+                        <div class="invalid-feedback">
+                            Please enter your last name.
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -52,10 +68,26 @@
                         <input type="text" class="form-control" name="first_name" placeholder="Enter your first name"
                             required>
                         <div class="invalid-feedback">
-                            Please enter your name.
+                            Please enter your first name.
                         </div>
                     </div>
                     <div class="col-md-4">
+                        <label for="middle_name" class="form-label">Middle Name</label>
+                        <input type="text" class="form-control" name="middle_name"
+                            placeholder="Enter your middle name" required>
+                        <div class="invalid-feedback">
+                            Please enter your middle name.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last_name" placeholder="Enter your last name"
+                            required>
+                        <div class="invalid-feedback">
+                            Please enter your last name.
+                        </div>
+                    </div>
+                    <div class="col-md-12">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" placeholder="Enter your email"
                             required>
