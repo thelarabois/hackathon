@@ -15,6 +15,15 @@
             @if (auth()->user()->role === 'superadmin')
                 @include('dashboard.superadmin')
             @endif
+            @if (auth()->user()->role === 'admin')
+                @include('dashboard.admin')
+            @endif
+            @if (auth()->user()->role === 'sme')
+                @include('dashboard.sme')
+            @endif
+            @if (auth()->user()->role === 'genpub')
+                @include('dashboard.genpub')
+            @endif
         </section>
 
     </main>
