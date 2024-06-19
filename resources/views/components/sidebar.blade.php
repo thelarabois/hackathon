@@ -55,14 +55,6 @@
                     </a>
                 </li><!-- End Dashboard Nav -->
 
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="/sales-table">
-                        <i class="bi bi-cash-coin"></i>
-                        <span>Sales Table</span>
-                    </a>
-                </li><!-- End Dashboard Nav -->
-
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/top-sme-seller">
                         <i class="bi bi-trophy"></i>
