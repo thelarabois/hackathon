@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         if(Auth::user()->role == 'superadmin'){
-            $users = User::where('role', 'admin')->get();
+            $users = User::all();
             return view('dashboard', compact('users'));
         }else
         if(Auth::user()->role == 'admin'){
