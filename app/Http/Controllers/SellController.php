@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Auth;
 use App\Models\UsedOil;
 
@@ -48,10 +49,9 @@ class SellController extends Controller
             'status' => 'Pending',
         ]);
 
-        // wala pay view para sa sales sa used oil! 
-        // cannot direct it 
-        return view('sell.index');
-        
+        // wala pay view para sa sales sa used oil!
+        // cannot direct it
+        return redirect()->route('sell.index');
     }
 
     /**

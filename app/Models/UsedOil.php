@@ -25,6 +25,6 @@ class UsedOil extends Model
 
     public function seller()
     {
-        return $this->belongsTo(User::class, 'id');
+        return $this->belongsTo(User::class);
     }
 }
