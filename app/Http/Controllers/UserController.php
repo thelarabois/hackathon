@@ -7,14 +7,21 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules;
 use App\Models\User;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Auth;
 use Exception;
 
 class UserController extends Controller
 {
     public function index()
     {
-        $user = User::all();
-        return view('Dashboard', compact('user'));
+        if(Auth::user()->role == 'superadmin'){
+            $users = User::where('role', 'admin')->get();
+            return view('dashboard', compact('users'));
+        }else
+        if(Auth::user()->role == 'admin'){
+            $users = User::whereNotIn('role', ['superadmin', 'admin'])->get();
+            return view('dashboard', compact('users'));
+        }
     }
 
     public function add(Request $request)
