@@ -51,17 +51,17 @@
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/rewards">
-                        <i class="bi bi-gift"></i>
-                        <span>Rewards</span>
+                        <i class="bi bi-trophy"></i>
+                        <span>Top SME Seller</span>
                     </a>
                 </li><!-- End Dashboard Nav -->
-
+{{-- 
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/top-sme-seller">
                         <i class="bi bi-trophy"></i>
                         <span>Top SME Seller</span>
                     </a>
-                </li><!-- End Dashboard Nav -->
+                </li><!-- End Dashboard Nav --> --}}
             @endif
 
             @if (auth()->user()->role === 'genpub')
