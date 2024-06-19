@@ -63,33 +63,23 @@ class UserController extends Controller
     public function edit(Request $request, $id)
     {
         try {
-            $user = User::where('id', $id)->first();
+            $user = User::find($id);
 
-            if(!$user) {
+            if (!$user) {
                 return redirect()->back()->with('error', 'User not found!');
             }
 
             $validator = Validator::make($request->all(), [
                 'name' => ['required', 'string', 'max:255'],
-                'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+                'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             ]);
 
-            if($validator->fails()) {
-                if ($validator->errors()->has('password')) {
-                    return redirect()->back()->with('error', 'password already taken.');
+            if ($validator->fails()) {
+                $errors = $validator->errors();
+                if ($errors->has('email')) {
+                    return redirect()->back()->with('error', 'Email already in use.');
                 }
-                return redirect()->back()->with('error', 'Invalid input');
-            }
-
-            //to ignore the current email that's already in the database
-            $validatorAlreadyExist = Validator::make($request->all(), [
-                'email' => [
-                    Rule::unique('users', 'email')->ignore($user->id),
-                ],
-            ]);
-
-            if($validatorAlreadyExist->fails()) {
-                return redirect()->back()->with('error', 'email already in use.');
+                return redirect()->back()->with('error', 'Invalid input.');
             }
 
             $user->name = $request->name;
@@ -98,10 +88,10 @@ class UserController extends Controller
 
             return redirect()->back()->with('success', 'User updated successfully');
         } catch (Exception $e) {
-            //return $e;
-            return redirect()->back()->with('error', 'Server Error(500)');
+            return redirect()->back()->with('error', 'Server Error (500)');
         }
     }
+
 
     public function delete($id)
     {
