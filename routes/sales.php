@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth')->group(function () {
     Route::prefix('sales')->group(function () {
         // Route::get('/', [UserController::class, 'index'])->name('user.index');
-        // Route::post('/login', [UserController::class, 'post'])->name('user.post');
+        Route::post('/sale', [SalesController::class, 'post'])->name('sale.post');
     });
 });
 
