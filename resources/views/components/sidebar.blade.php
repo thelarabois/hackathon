@@ -13,7 +13,7 @@
 
             @if (auth()->user()->role === 'superadmin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/user-management">
+                    <a class="nav-link collapsed" href="{{route('user.index')}}">
                         <i class="bi bi-person"></i>
                         <span>User Management</span>
                     </a>
