@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\SalesController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
@@ -9,4 +9,3 @@ Route::middleware('auth')->group(function () {
         Route::post('/sale', [SalesController::class, 'post'])->name('sale.post');
     });
 });
-

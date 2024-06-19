@@ -29,7 +29,7 @@
                     </a>
                 </li><!-- End Dashboard Nav -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/inventory">
+                    <a class="nav-link collapsed" href="{{ route('inventory.index') }}">
                         <i class="bi bi-layout-text-window-reverse"></i>
                         <span>Inventory</span>
                     </a>
