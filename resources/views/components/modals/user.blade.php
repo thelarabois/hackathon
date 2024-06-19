@@ -1,5 +1,5 @@
 {{-- Add Modal --}}
-@foreach($users as $userData)
+
 <div class="modal fade" id="addModal" tabindex="-1">
     <div class="modal-dialog modal-m modal-dialog-centered">
         <div class="modal-content">
@@ -36,8 +36,9 @@
     </div>
 </div>
 
+@foreach($users as $userData)
 {{-- Edit Modal --}}
-<div class="modal fade" id="editModal" tabindex="-1">
+<div class="modal fade" id="editModal{{$userData->id}}" tabindex="-1">
     <div class="modal-dialog modal-m modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -45,13 +46,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 needs-validation" method="POST" action="{{route('user.edit', ['id' => 'null'])}}" novalidate>
+                <form class="row g-3 needs-validation" method="POST" action="{{route('user.edit', ['id' => $userData->id])}}" novalidate>
                     @csrf
                     @method('PATCH')
                     <div class="col-md-5">
                         <label for="first_name" class="form-label">Name</label>
                         <input type="text" class="form-control" name="name" placeholder="Enter your first name"
-                            required>
+                            required value="{{$userData->name}}">
                         <div class="invalid-feedback">
                             Please enter your Name.
                         </div>
@@ -59,7 +60,7 @@
                     <div class="col-md-5">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" placeholder="Enter your email"
-                            required>
+                            required value="{{$userData->email}}">
                         <div class="invalid-feedback">
                             Please enter your email.
                         </div>
@@ -76,9 +77,11 @@
 
 
 {{-- Delete Modal --}}
-<div class="modal fade" id="deleteModal" tabindex="-1">
+<div class="modal fade" id="deleteModal{{$userData->id}}" tabindex="-1">
     <div class="modal-dialog modal-m modal-dialog-centered">
-        <div class="modal-content">
+        <form class="modal-content" method="POST" action="{{route('user.delete', ['id' => $userData->id])}}">
+            @csrf
+            @method('delete')
             <div class="modal-header">
                 <h5 class="modal-title">Delete User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -88,9 +91,9 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Delete</button>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 @endforeach

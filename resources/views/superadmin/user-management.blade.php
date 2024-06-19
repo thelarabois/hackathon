@@ -7,5 +7,4 @@
     </div> --}}
     @include('components.modals.user')
     @include('components.tables.user')
-
 @endsection
