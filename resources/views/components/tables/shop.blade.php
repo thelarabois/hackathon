@@ -1,7 +1,7 @@
 {{-- Add Modal --}}
 
 <div id="addModal" tabindex="-1">
-    <h1>LGU Oil Stock: {{$finalInventory}}</h1>
+    <h2>LGU Oil Stock: {{$finalInventory}}</h2>
     <div>
         <div class="modal-content">
             <div class="modal-header">
