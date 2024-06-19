@@ -20,5 +20,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'superadmin@oildeez.dev',
             'role' => 'superadmin',
         ]);
+
+        User::factory()->create([
+            'name' => 'Admin (LGU)',
+            'email' => 'admin@oildeez.dev',
+            'role' => 'admin',
+        ]);
     }
 }
