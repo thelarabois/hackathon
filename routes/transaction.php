@@ -9,5 +9,8 @@ Route::middleware('auth')->group(function () {
         Route::post('/buy', [TransactionController::class, 'buy'])->name('transaction.buy');
         // Route::post('/login', [UserController::class, 'post'])->name('user.post');
     });
+
+    //LGU route transaction index
+    Route::get('transaction/admin', [TransactionController::class, 'adminIndex'])->name('admin.transaction.index');
 });
 
