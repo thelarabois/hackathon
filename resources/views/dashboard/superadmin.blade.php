@@ -1,6 +1,15 @@
 <div class="row">
     {{-- Left side columns --}}
     <div class="col-lg-8">
+        <div class="mt-3 mb-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                Add User
+            </button>
+        </div>
+        {{-- Add Modal --}}
+        @include('components.modals.user')
+
+        {{-- Table --}}
         <x-tables-user />
     </div>{{-- End Left side columns --}}
 
