@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Models\UsedOil;
-
+use App\Models\PurifiedOil;
+use Illuminate\Support\Facades\Validator;
+use Exception;
 use Illuminate\Http\Request;
 
 class SellController extends Controller
@@ -54,35 +56,59 @@ class SellController extends Controller
         return redirect()->route('sell.index');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function adminSell(Request $request)
     {
-        //
+        try {
+            $validator = Validator::make($request->all(), [
+                'quality' => ['required', 'string', 'max:255'],
+                'quantity' => ['required', 'string', 'max:255'],
+            ]);
+
+            if($validator->fails()) {
+                return redirect()->back()->with('error', 'Invalid input');
+            }
+
+            $quantity = (float)$request->quantity;
+            $price = 0;
+
+            if($request->quality == 'unknown'){
+                $price = $quantity * 15;
+            }
+            elseif($request->quality == 'class_A'){
+                $price = $quantity * 20;
+            }
+            elseif($request->quality == 'class_B'){
+                $price = $quantity * 18;
+            }
+            elseif($request->quality == 'class_C'){
+                $price = $quantity * 16;
+            }
+
+            $purifiedOil = new PurifiedOil();
+            $purifiedOil->quality = $request->quality;
+            $purifiedOil->price = $price;
+            $purifiedOil->quantity = (string)$quantity;
+            $purifiedOil->save();
+
+            return redirect()->back()->with('success', 'Purified oil is now available for sale!');
+        } catch (Exception $e) {
+            // return $e;
+            return redirect()->back()->with('error', 'Server error 500');
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
-        //
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-        //
+
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
-        //
+
     }
 }

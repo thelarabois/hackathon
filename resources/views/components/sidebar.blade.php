@@ -23,7 +23,7 @@
 
             @if (auth()->user()->role === 'admin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/users">
+                    <a class="nav-link collapsed" href="{{ route('admin.index') }}">
                         <i class="bi bi-person"></i>
                         <span>Users</span>
                     </a>

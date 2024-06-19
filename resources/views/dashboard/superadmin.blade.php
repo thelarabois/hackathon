@@ -1,4 +1,4 @@
-@if (Route::current()->getName() === 'user.index')
+@if (Route::current()->getName() === 'superadmin.index')
     <div class="mt-3 mb-3">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
             Add User
@@ -7,7 +7,7 @@
 @endif
 <div class="row">
     <div class="col-lg-8">
-        <div class="row">
+  
             @hasSection('user-management')
                 @yield('user-management')
             @else
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             @endif
-        </div>
+        
     </div>
     {{-- End Left side columns --}}
 

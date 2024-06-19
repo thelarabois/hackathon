@@ -14,6 +14,6 @@ Route::middleware('auth')->group(function () {
     });
 
     //Admin or the LGU
-    Route::get('admin/', [UserController::class, 'index'])->name('admin.index');
+    Route::get('/admin', [UserController::class, 'index'])->name('admin.index');
 });
 
