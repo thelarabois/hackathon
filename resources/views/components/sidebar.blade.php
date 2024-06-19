@@ -20,6 +20,7 @@
                 </li><!-- End Dashboard Nav -->
             @endif
 
+
             @if (auth()->user()->role === 'admin')
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/users">
@@ -55,18 +56,50 @@
                     </a>
                 </li><!-- End Dashboard Nav -->
 
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="/sales-table">
-                        <i class="bi bi-cash-coin"></i>
-                        <span>Sales Table</span>
-                    </a>
-                </li><!-- End Dashboard Nav -->
-
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/top-sme-seller">
                         <i class="bi bi-trophy"></i>
                         <span>Top SME Seller</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+            @endif
+
+            @if (auth()->user()->role === 'genpub')
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/shop">
+                        <i class="bi bi-cart"></i>
+                        <span>Shop</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/transactions">
+                        <i class="bi bi-receipt"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+            @endif
+
+
+            @if (auth()->user()->role === 'sme')
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/sell">
+                        <i class="bi bi-currency-dollar"></i>
+                        <span>Sell</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/rewards">
+                        <i class="bi bi-gift"></i>
+                        <span>Rewards</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/transactions">
+                        <i class="bi bi-receipt"></i>
+                        <span>Transactions</span>
                     </a>
                 </li><!-- End Dashboard Nav -->
             @endif
