@@ -13,7 +13,10 @@ class SellController extends Controller
      */
     public function index()
     {
-        return view('sell.index');
+        $id = Auth::user()->id;
+        $usedOils = UsedOil::with('seller')->where('seller_id', $id)->get();
+        // dd($usedOils);
+        return view('sell.index', compact('usedOils'));
     }
 
     /**
