@@ -6,5 +6,5 @@
         </button>
     </div> --}}
     @include('components.modals.user')
-    @include('components.tables.user')
+    <x-tables-user />
 @endsection
