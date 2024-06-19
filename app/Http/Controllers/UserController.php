@@ -18,7 +18,7 @@ class UserController extends Controller
         if(Auth::user()->role == 'superadmin') {
             $users = User::where('role', 'admin')->get();
             return view('superadmin.user-management', compact('users'));
-        } elseif (Auth::user()->role == 'admin') {
+        } else if (Auth::user()->role == 'admin') {
             $users = User::whereNotIn('role', ['superadmin', 'admin'])->get();
             return view('dashboard.index', compact('users'));
         }

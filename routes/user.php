@@ -4,11 +4,16 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
-    Route::prefix('user')->group(function () {
-        Route::get('/', [UserController::class, 'index'])->name('user.index');
-        Route::post('/add', [UserController::class, 'add'])->name('user.add');
-        Route::patch('/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
-        Route::delete('/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
+
+    //Super Admin
+    Route::prefix('superAdmin')->group(function () {
+        Route::get('/', [UserController::class, 'index'])->name('superadmin.index');
+        Route::post('/add', [UserController::class, 'add'])->name('superadmin.add');
+        Route::patch('/edit/{id}', [UserController::class, 'edit'])->name('superadmin.edit');
+        Route::delete('/delete/{id}', [UserController::class, 'delete'])->name('superadmin.delete');
     });
+
+    //Admin or the LGU
+    Route::get('admin/', [UserController::class, 'index'])->name('admin.index');
 });
 

@@ -13,7 +13,7 @@
 
             @if (auth()->user()->role === 'superadmin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="{{ route('user.index') }}">
+                    <a class="nav-link collapsed" href="{{ route('superadmin.index') }}">
                         <i class="bi bi-person"></i>
                         <span>User Management</span>
                     </a>
@@ -23,7 +23,7 @@
 
             @if (auth()->user()->role === 'admin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/users">
+                    <a class="nav-link collapsed" href="{{ route('superadmin.index') }}">
                         <i class="bi bi-person"></i>
                         <span>Users</span>
                     </a>

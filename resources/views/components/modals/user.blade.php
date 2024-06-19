@@ -8,7 +8,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 needs-validation" method="POST" action="{{route('user.add')}}" novalidate>
+                <form class="row g-3 needs-validation" method="POST" action="{{route('superadmin.add')}}" novalidate>
                     @csrf
                     <div class="col-md-5">
                         <label for="first_name" class="form-label">Name</label>
@@ -46,7 +46,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 needs-validation" method="POST" action="{{route('user.edit', ['id' => $userData->id])}}" novalidate>
+                <form class="row g-3 needs-validation" method="POST" action="{{route('superadmin.edit', ['id' => $userData->id])}}" novalidate>
                     @csrf
                     @method('PATCH')
                     <div class="col-md-5">
@@ -79,7 +79,7 @@
 {{-- Delete Modal --}}
 <div class="modal fade" id="deleteModal{{$userData->id}}" tabindex="-1">
     <div class="modal-dialog modal-m modal-dialog-centered">
-        <form class="modal-content" method="POST" action="{{route('user.delete', ['id' => $userData->id])}}">
+        <form class="modal-content" method="POST" action="{{route('superadmin.delete', ['id' => $userData->id])}}">
             @csrf
             @method('delete')
             <div class="modal-header">
