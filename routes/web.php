@@ -19,3 +19,4 @@ require_once __DIR__. '/inventory.php';
 require_once __DIR__. '/transaction.php';
 require_once __DIR__. '/rewards.php';
 require_once __DIR__. '/sales.php';
+require_once __DIR__. '/sell.php';

@@ -22,6 +22,7 @@ class UserController extends Controller
             $users = User::whereNotIn('role', ['superadmin', 'admin'])->get();
             return view('dashboard.index', compact('users'));
         }
+
     }
 
     public function add(Request $request)
