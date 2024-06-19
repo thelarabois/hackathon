@@ -1,6 +1,6 @@
 {{-- Add Modal --}}
 <div class="modal fade" id="addModal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add User</h5>
@@ -33,7 +33,7 @@
                             Please enter your last name.
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" placeholder="Enter your email"
                             required>
@@ -53,7 +53,7 @@
 
 {{-- Edit Modal --}}
 <div class="modal fade" id="editModal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit User</h5>
@@ -108,7 +108,7 @@
 
 {{-- Delete Modal --}}
 <div class="modal fade" id="deleteModal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-m modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Delete User</h5>
