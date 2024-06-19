@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Oilify') }}</title>
+    <title>{{ config('app.name', 'RecycOIL') }}</title>
 
     <!-- Favicons -->
     <link href=" {{ asset('assets/img/favicon.png') }}" rel="icon">
@@ -47,7 +47,7 @@
                             <div class="d-flex justify-content-center py-4">
                                 <a href="/" class="logo d-flex align-items-center w-auto">
                                     <img src=" {{ asset('assets/img/logo.png') }}" alt="">
-                                    <span class="d-none d-lg-block">Oilify</span>
+                                    <span class="d-none d-lg-block">RecycOIL</span>
                                 </a>
                             </div>
                             <!-- End Logo -->
