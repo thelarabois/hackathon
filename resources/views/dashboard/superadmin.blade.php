@@ -142,6 +142,7 @@
                 </div>
 
             </div>
-        </div>{{-- End Recent Activity --}}
+        </div>
+        {{-- End Recent Activity --}}
     </div>{{-- End Right side columns --}}
 </div>
