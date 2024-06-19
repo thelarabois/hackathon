@@ -4,17 +4,27 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="{{ route('dashboard') }}">
+                <a class="nav-link {{ request()->routeIs('dashboard') ? '' : 'collapsed' }}"
+                    href="{{ route('dashboard') }}">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
+            @if (auth()->user()->role === 'superadmin')
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="/user-management">
+                        <i class="bi bi-person"></i>
+                        <span>User Management</span>
+                    </a>
+                </li><!-- End Dashboard Nav -->
+            @endif
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-menu-button-wide"></i><span>Components</span><i
                         class="bi bi-chevron-down ms-auto"></i>
                 </a>
+                {{--  NOTE: this nav will be for superadmin --}}
                 <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
                         <a href="components-alerts.html">
