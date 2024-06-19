@@ -8,8 +8,8 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Customer Name</th>
-                    <th scope="col">Quantity</th>
                     <th scope="col">Quality</th>
+                    <th scope="col">Quantity</th>
                     <th scope="col">Purpose</th>
                     <th scope="col">Order Date</th>
                     <th scope="col">Action</th>
@@ -20,8 +20,8 @@
                 <tr>
                     <th scope="row">1</th>
                     <td>Jayson Derulo</td>
-                    <td>5kg</td>
                     <td>Uknown</td>
+                    <td>5kg</td>
                     <td>To make soap</td>
                     <td>2024-06-19 22:15:58</td>
                     <td>
@@ -43,8 +43,8 @@
                 <tr>
                     <th scope="row">2</th>
                     <td>Amyel Tabudlo</td>
-                    <td>8kg</td>
                     <td>Class A</td>
+                    <td>8kg</td>
                     <td>To make lubricant</td>
                     <td>2024-06-19 22:15:58</td>
                     <td class="d-flex justify-content-center align-items-center">
@@ -57,8 +57,8 @@
                 <tr>
                     <th scope="row">3</th>
                     <td>Salvador Muckerberg</td>
-                    <td>2kg</td>
                     <td>Uknown</td>
+                    <td>2kg</td>
                     <td>To make fuel</td>
                     <td>2024-06-19 22:15:58</td>
                     <td>

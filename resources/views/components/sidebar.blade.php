@@ -43,7 +43,7 @@
                 </li><!-- End Dashboard Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/sales">
+                    <a class="nav-link collapsed" href="{{ route('admin.sale.index')}}">
                         <i class="bi bi-cash-coin"></i>
                         <span>Sales</span>
                     </a>
