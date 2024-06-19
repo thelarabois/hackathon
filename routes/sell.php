@@ -8,5 +8,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [SellController::class, 'index'])->name('sell.index');
         Route::post('/', [SellController::class, 'post'])->name('sell.post');
     });
+
+    Route::post('/admin/sell', [SellController::class, 'adminSell'])->name('admin.sell');
 });
 
