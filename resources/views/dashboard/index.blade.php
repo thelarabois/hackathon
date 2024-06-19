@@ -13,7 +13,7 @@
 
         <section class="section dashboard">
             @if (auth()->user()->role === 'superadmin')
-                @include('superadmin')
+                @include('dashboard.superadmin')
             @endif
         </section>
 

@@ -5,7 +5,7 @@
 
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('dashboard') ? '' : 'collapsed' }}"
-                    href="{{ route('dashboard') }}">
+                    href="{{ route('dashboard.index') }}">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>

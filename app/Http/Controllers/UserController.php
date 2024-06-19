@@ -14,13 +14,12 @@ class UserController extends Controller
 {
     public function index()
     {
-        if(Auth::user()->role == 'superadmin'){
+        if(Auth::user()->role == 'superadmin') {
             $users = User::where('role', 'admin')->get();
-            return view('dashboard', compact('users'));
-        }else
-        if(Auth::user()->role == 'admin'){
+            return view('dashboard.index', compact('users'));
+        } elseif (Auth::user()->role == 'admin') {
             $users = User::whereNotIn('role', ['superadmin', 'admin'])->get();
-            return view('dashboard', compact('users'));
+            return view('dashboard.index', compact('users'));
         }
     }
 
@@ -35,7 +34,7 @@ class UserController extends Controller
                 'coins' => ['nullable', 'string', 'max:255'],
             ]);
 
-            if($validator->fails()){
+            if($validator->fails()) {
                 if ($validator->errors()->has('password')) {
                     return redirect()->back()->with('error', 'password already taken.');
                 }
@@ -70,7 +69,7 @@ class UserController extends Controller
         try {
             $user = User::where('id', $id)->first();
 
-            if(!$user){
+            if(!$user) {
                 return redirect()->back()->with('error', 'User not found!');
             }
 
@@ -82,7 +81,7 @@ class UserController extends Controller
                 'coins' => ['nullable', 'string', 'max:255'],
             ]);
 
-            if($validator->fails()){
+            if($validator->fails()) {
                 if ($validator->errors()->has('password')) {
                     return redirect()->back()->with('error', 'password already taken.');
                 }
@@ -96,7 +95,7 @@ class UserController extends Controller
                 ],
             ]);
 
-            if($validatorAlreadyExist->fails()){
+            if($validatorAlreadyExist->fails()) {
                 return redirect()->back()->with('error', 'email already in use.');
             }
 
@@ -119,7 +118,7 @@ class UserController extends Controller
         try {
             $user = User::where('id', $id)->first();
 
-            if(!$user){
+            if(!$user) {
                 return redirect()->back()->with('error', 'User not found!');
             }
 
