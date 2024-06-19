@@ -13,7 +13,7 @@ class DashboardController extends Controller
      */
     public function index(): View|Factory
     {
-        return view("dashboard");
+        return view("dashboard.index");
     }
 
     /**
