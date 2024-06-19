@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="col-12">
-                    <button class="btn btn-primary w-100" type="submit">Register</button>
+                    <button class="btn btn-warning text-white w-100" type="submit">Register</button>
                 </div>
 
                 <div class="col-12">
