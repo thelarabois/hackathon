@@ -13,7 +13,7 @@
 
             @if (auth()->user()->role === 'superadmin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="{{ route('superadmin.index') }}">
+                    <a class="nav-link collapsed" href="{{ route('user.index') }}">
                         <i class="bi bi-person"></i>
                         <span>User Management</span>
                     </a>
@@ -23,7 +23,7 @@
 
             @if (auth()->user()->role === 'admin')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="{{ route('superadmin.index') }}">
+                    <a class="nav-link collapsed" href="/users">
                         <i class="bi bi-person"></i>
                         <span>Users</span>
                     </a>
@@ -66,7 +66,7 @@
 
             @if (auth()->user()->role === 'genpub')
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="/shop">
+                    <a class="nav-link collapsed" href="{{ route('transaction.index') }}">
                         <i class="bi bi-cart"></i>
                         <span>Shop</span>
                     </a>
