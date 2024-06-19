@@ -42,6 +42,19 @@
                     </div>
                 </div>
 
+                {{-- Dropdown --}}
+                <div class="col-12">
+                    <label for="role" class="form-label">Role</label>
+                    <select class="form-select" name="role" id="role" required>
+                        <option selected disabled value="">Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a role.
+                    </div>
+                </div>
+
                 <!-- Password -->
                 <div class="col-12">
                     <label for="password" class="form-label">Password</label>
@@ -55,7 +68,7 @@
                             Please enter your password.
                         </div>
                     @enderror
-                </div>
+                </div>            
 
                 <!-- Confirm Password -->
                 <div class="col-12">
