@@ -47,8 +47,8 @@
                     <label for="role" class="form-label">Role</label>
                     <select class="form-select" name="role" id="role" required>
                         <option selected disabled value="">Select Role</option>
-                        <option value="admin">Admin</option>
-                        <option value="user">User</option>
+                        <option value="sme">SME</option>
+                        <option value="genpub">General Public</option>
                     </select>
                     <div class="invalid-feedback">
                         Please select a role.
