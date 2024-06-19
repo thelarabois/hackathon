@@ -19,7 +19,7 @@
                 @include('dashboard.admin')
             @endif
             @if (auth()->user()->role === 'sme')
-                @include('dashboard.sme')
+                @include('dashboard.smes')
             @endif
             @if (auth()->user()->role === 'genpub')
                 @include('dashboard.genpub')
