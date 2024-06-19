@@ -11,7 +11,12 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        //
+        return view('buy.index');
+    }
+
+    public function buy(Request $request)
+    {
+
     }
 
     /**
