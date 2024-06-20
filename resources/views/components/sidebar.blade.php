@@ -4,8 +4,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link"
-                    href="{{ route('dashboard.index') }}">
+                <a class="nav-link" href="{{ route('dashboard.index') }}">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
@@ -43,7 +42,7 @@
                 </li><!-- End Dashboard Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="{{ route('admin.sale.index')}}">
+                    <a class="nav-link collapsed" href="{{ route('admin.sale.index') }}">
                         <i class="bi bi-cash-coin"></i>
                         <span>Sales</span>
                     </a>
@@ -52,10 +51,10 @@
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/rewards">
                         <i class="bi bi-trophy"></i>
-                        <span>Top SME Seller</span>
+                        <span>Top MSME Seller</span>
                     </a>
                 </li><!-- End Dashboard Nav -->
-{{-- 
+                {{--
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/top-sme-seller">
                         <i class="bi bi-trophy"></i>
