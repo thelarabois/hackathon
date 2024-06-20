@@ -13,6 +13,7 @@
 
 
         <section class="section dashboard">
+            <div class="row">
             @if (auth()->user()->role === 'superadmin')
                 @include('dashboard.superadmin')
             @endif
@@ -25,6 +26,7 @@
             @if (auth()->user()->role === 'genpub')
                 @include('dashboard.genpub')
             @endif
+            </div>
         </section>
 
     </main>
