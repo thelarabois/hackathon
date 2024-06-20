@@ -1,14 +1,10 @@
-<div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <img src="assets/img/card.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Card with an image on left</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-            </div>
-        </div>
+<div class="card flex-fill bg-warning-gr">
+    <div class="card-body text-dark">
+        <h1 class="card-leaderboard"> You are Ranked 1,<br>Jollibee - DT!</h1>
+        <span>You have sell a total of</span>
+
+        <h1 class="mb-5 card-stats">8kl of Oils</h1>
+        <h4>Reward Points</h4>
+        <span class="card-points">1,000</span>
     </div>
 </div>

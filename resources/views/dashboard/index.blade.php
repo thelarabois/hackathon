@@ -11,23 +11,23 @@
             </nav>
         </div>{{-- End Page Title --}}
 
-
-        <section class="section dashboard">
+          <section class="section {{ auth()->user()->role === 'sme' ? 'profile' : 'dashboard' }}">
             <div class="row">
-            @if (auth()->user()->role === 'superadmin')
-                @include('dashboard.superadmin')
-            @endif
-            @if (auth()->user()->role === 'admin')
-                @include('dashboard.admin')
-            @endif
-            @if (auth()->user()->role === 'sme')
-                @include('dashboard.smes')
-            @endif
-            @if (auth()->user()->role === 'genpub')
-                @include('dashboard.genpub')
-            @endif
+                @if (auth()->user()->role === 'superadmin')
+                    @include('dashboard.superadmin')
+                @endif
+                @if (auth()->user()->role === 'admin')
+                    @include('dashboard.admin')
+                @endif
+                @if (auth()->user()->role === 'sme')
+                    @include('dashboard.smes')
+                @endif
+                @if (auth()->user()->role === 'genpub')
+                    @include('dashboard.genpub')
+                @endif
             </div>
         </section>
+        
 
     </main>
 </x-app-layout>
