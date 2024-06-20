@@ -1,3 +1,7 @@
 <div class="row">
-    @yield('content')
+    @hasSection('content')
+        @yield('content')
+    @else
+        content here fuck
+    @endif
 </div>
