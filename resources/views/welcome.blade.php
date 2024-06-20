@@ -35,35 +35,16 @@
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">RecycOIL</h1>
+                <h1 class="sitename">Recyc<span class="text-warning">OIL</span></h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home<br></a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -72,7 +53,7 @@
                 @auth
                     <a class="btn-getstarted" href="{{ url('/dashboard') }}">Dashboard</a>
                 @else
-                    <a class="btn-getstarted" href="{{ route('login') }}">Get Started</a>
+                    <a class="btn-getstarted" href="{{ route('login') }}">Login</a>
                 @endauth
             @endif
 
@@ -88,7 +69,8 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
                         <h1>Revolutionizing Oil Recycling</h1>
-                        <p>Transforming used oils into healthy, reusable products. Join us in making the world a cleaner place.</p>
+                        <p>Transforming used oils into healthy, reusable products. Join us in making the world a cleaner
+                            place.</p>
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -102,6 +84,12 @@
             </div>
 
         </section><!-- /Hero Section -->
+
+        <!-- Section Title -->
+        <div class="container section-title mt-5" data-aos="fade-up">
+            <h2>Our Partners</h2>
+        </div>
+        <!-- End Section Title -->
 
         <!-- Clients Section -->
         <section id="clients" class="clients section">
@@ -139,55 +127,74 @@
             </div>
 
         </section><!-- /Clients Section -->
-        
+
         <!-- Services Section -->
         <section id="services" class="services section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>Our platform is dedicated to transforming the way used cooking oil (UCO) is managed and recycled. By connecting households, businesses, and collection services, we provide a seamless and efficient solution for the proper disposal and recycling of UCO, promoting environmental sustainability and resource efficiency.</p>
-        </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p>Our platform is dedicated to transforming the way used cooking oil (UCO) is managed and recycled. By
+                    connecting households, businesses, and collection services, we provide a seamless and efficient
+                    solution for the proper disposal and recycling of UCO, promoting environmental sustainability and
+                    resource efficiency.</p>
+            </div>
+            <!-- End Section Title -->
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row gy-4">
+                <div class="row gy-4">
 
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item position-relative">
-                        <i class="bi bi-activity"></i>
-                        <h4><a href="" class="stretched-link">Used oil avaibility data</a></h4>
-                        <p>Our platform provides comprehensive Used Oil Availability Data Services, offering real-time insights into the collection and availability of used cooking oil (UCO). This service is designed for businesses, waste management companies, and recyclers looking to optimize their operations and make informed decisions.</p>
-                    </div>
-                </div><!-- End Service Item -->
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-activity"></i>
+                            <h4><a href="" class="stretched-link">Used oil avaibility data</a></h4>
+                            <p>Our platform provides comprehensive Used Oil Availability Data Services, offering
+                                real-time insights into the collection and availability of used cooking oil (UCO). This
+                                service is designed for businesses, waste management companies, and recyclers looking to
+                                optimize their operations and make informed decisions.</p>
+                        </div>
+                    </div><!-- End Service Item -->
 
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item position-relative">
-                        <i class="bi bi-bounding-box-circles"></i>
-                        <h4><a href="" class="stretched-link">Platform</a></h4>
-                        <p>Our platform revolutionizes the management and recycling of used cooking oil (UCO) by providing a seamless, efficient, and data-driven solution for households, businesses, and waste management companies. We connect all stakeholders in the UCO lifecycle, facilitating proper disposal, collection, and recycling to promote environmental sustainability.</p>
-                    </div>
-                </div><!-- End Service Item -->
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-bounding-box-circles"></i>
+                            <h4><a href="" class="stretched-link">Platform</a></h4>
+                            <p>Our platform revolutionizes the management and recycling of used cooking oil (UCO) by
+                                providing a seamless, efficient, and data-driven solution for households, businesses,
+                                and waste management companies. We connect all stakeholders in the UCO lifecycle,
+                                facilitating proper disposal, collection, and recycling to promote environmental
+                                sustainability.</p>
+                        </div>
+                    </div><!-- End Service Item -->
 
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item position-relative">
-                        <i class="bi bi-calendar4-week"></i>
-                        <h4><a href="" class="stretched-link">Customer Support</a></h4>
-                        <p>Our platform offers comprehensive customer support to ensure a seamless and satisfying user experience. Access a dedicated help center with FAQs, live chat, and a support ticket system for quick assistance. Our knowledgeable and friendly support team is always ready to help with any issues or questions, ensuring you get the most out of our used oil management services.</p>
-                    </div>
-                </div><!-- End Service Item -->
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-calendar4-week"></i>
+                            <h4><a href="" class="stretched-link">Customer Support</a></h4>
+                            <p>Our platform offers comprehensive customer support to ensure a seamless and satisfying
+                                user experience. Access a dedicated help center with FAQs, live chat, and a support
+                                ticket system for quick assistance. Our knowledgeable and friendly support team is
+                                always ready to help with any issues or questions, ensuring you get the most out of our
+                                used oil management services.</p>
+                        </div>
+                    </div><!-- End Service Item -->
 
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item position-relative">
-                        <i class="bi bi-broadcast"></i>
-                        <h4><a href="" class="stretched-link">Marketplace</a></h4>
-                        <p>Our platform's Marketplace Service connects users with a variety of eco-friendly products made from recycled used cooking oil. Discover and purchase items like biodiesel, soaps, and detergents directly from local artisans and sustainable businesses. Support the circular economy and make greener choices effortlessly through our user-friendly marketplace.</p>
-                    </div>
-                </div><!-- End Service Item -->
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-broadcast"></i>
+                            <h4><a href="" class="stretched-link">Marketplace</a></h4>
+                            <p>Our platform's Marketplace Service connects users with a variety of eco-friendly products
+                                made from recycled used cooking oil. Discover and purchase items like biodiesel, soaps,
+                                and detergents directly from local artisans and sustainable businesses. Support the
+                                circular economy and make greener choices effortlessly through our user-friendly
+                                marketplace.</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
 
             </div>
-
-        </div>
 
         </section><!-- /Services Section -->
 
@@ -197,58 +204,55 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>About Us</h2>
-                <p>We are a platform dedicated to buying used oils from small and medium enterprises, cleaning and filtering them, and reselling them as high-quality, healthy oils. Our mission is to reduce waste and promote sustainability in the food industry.</p>
+                <p>We are a platform dedicated to buying used cooking oils from small and medium enterprises (SMEs), cleaning and filtering them, and reselling them as high-quality biodiesel fuels. Our mission is to reduce waste and promote sustainability in the industrial sector.</p>
             </div><!-- End Section Title -->
-
+            
             <div class="container">
-
+            
                 <div class="row gy-5">
-
+            
                     <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Voluptatem dignissimos provident quasi</h3>
+                        <h3>Empowering Sustainability and Growth</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            Our platform bridges the gap between SMEs and local government units (LGUs) to facilitate the responsible disposal and recycling of used cooking oil (UCO). By doing so, we help SMEs earn extra income while contributing to a greener environment.
                         </p>
-                        <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About
-                                us</span> <i class="bi bi-chevron-right"></i></a>
+                        <a href="#" class="about-btn align-self-center align-self-xl-start"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
                     </div>
-
+            
                     <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
                         <div class="row gy-4">
-
+            
                             <div class="col-md-6 icon-box position-relative">
-                                <i class="bi bi-briefcase"></i>
-                                <h4><a href="" class="stretched-link">Corporis voluptates sit</a></h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
-                                </p>
+                                <i class="bi bi-recycle"></i>
+                                <h4><a href="" class="stretched-link">Sustainable Practices</a></h4>
+                                <p>We promote eco-friendly practices by recycling UCO into biodiesel, reducing pollution, and supporting sustainable energy solutions.</p>
                             </div><!-- Icon-Box -->
-
+            
                             <div class="col-md-6 icon-box position-relative">
-                                <i class="bi bi-gem"></i>
-                                <h4><a href="" class="stretched-link">Ullamco laboris nisi</a></h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                </p>
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <h4><a href="" class="stretched-link">Economic Benefits</a></h4>
+                                <p>Our platform helps SMEs earn additional income through the sale of UCO, turning waste into a valuable resource.</p>
                             </div><!-- Icon-Box -->
-
+            
                             <div class="col-md-6 icon-box position-relative">
-                                <i class="bi bi-broadcast"></i>
-                                <h4><a href="" class="stretched-link">Labore consequatur</a></h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                <i class="bi bi-people"></i>
+                                <h4><a href="" class="stretched-link">Community Impact</a></h4>
+                                <p>By working with LGUs, we create community-based green initiatives that enhance local sustainability efforts.</p>
                             </div><!-- Icon-Box -->
-
+            
                             <div class="col-md-6 icon-box position-relative">
-                                <i class="bi bi-easel"></i>
-                                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
-                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                                <i class="bi bi-globe"></i>
+                                <h4><a href="" class="stretched-link">Global Vision</a></h4>
+                                <p>We aim to set an example for other communities worldwide by demonstrating the effectiveness of local recycling programs.</p>
                             </div><!-- Icon-Box -->
-
+            
                         </div>
                     </div>
-
+            
                 </div>
-
+            
             </div>
+            
 
         </section><!-- /About Section -->
 
@@ -273,7 +277,7 @@
                                     <div>
                                         <span data-purecounter-start="0" data-purecounter-end="232"
                                             data-purecounter-duration="1" class="purecounter"></span>
-                                        <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                                        <p><strong>Happy Clients</strong></p>
                                     </div>
                                 </div>
                             </div><!-- End Stats Item -->
@@ -284,7 +288,7 @@
                                     <div>
                                         <span data-purecounter-start="0" data-purecounter-end="521"
                                             data-purecounter-duration="1" class="purecounter"></span>
-                                        <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                                        <p><strong>Projects</strong></p>
                                     </div>
                                 </div>
                             </div><!-- End Stats Item -->
@@ -295,7 +299,7 @@
                                     <div>
                                         <span data-purecounter-start="0" data-purecounter-end="1453"
                                             data-purecounter-duration="1" class="purecounter"></span>
-                                        <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                                        <p><strong>Hours Of Support</strong></p>
                                     </div>
                                 </div>
                             </div><!-- End Stats Item -->
@@ -306,7 +310,7 @@
                                     <div>
                                         <span data-purecounter-start="0" data-purecounter-end="32"
                                             data-purecounter-duration="1" class="purecounter"></span>
-                                        <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                                        <p><strong>Hard Workers</strong></p>
                                     </div>
                                 </div>
                             </div><!-- End Stats Item -->
@@ -325,9 +329,9 @@
         <section id="alt-services" class="alt-services section">
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+        
                 <div class="row gy-4">
-
+        
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="img">
@@ -335,14 +339,13 @@
                             </div>
                             <div class="details">
                                 <a href="service-details.html" class="stretched-link">
-                                    <h3>Luricant Oils</h3>
+                                    <h3>Lubricant Oils</h3>
                                 </a>
-                                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
-                                    dolores iure perferendis.</p>
+                                <p>We process used oils to create high-quality lubricant oils, perfect for industrial and automotive applications.</p>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
-
+        
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="img">
@@ -352,12 +355,11 @@
                                 <a href="service-details.html" class="stretched-link">
                                     <h3>Soaps</h3>
                                 </a>
-                                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque
-                                    eum hic non ut nesciunt dolorem.</p>
+                                <p>Our recycled oils are transformed into eco-friendly soaps, providing a sustainable alternative for personal care.</p>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
-
+        
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="img">
@@ -367,36 +369,34 @@
                                 <a href="service-details.html" class="stretched-link">
                                     <h3>Bio Fuel</h3>
                                 </a>
-                                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                    voluptas adipisci eos earum corrupti.</p>
+                                <p>Used cooking oils are converted into biodiesel, offering a cleaner, renewable energy source for various industries.</p>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
-
+        
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
                         <div class="service-item position-relative">
                             <div class="img">
-                                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/services-4.png" class="img-fluid" alt="">
                             </div>
                             <div class="details">
                                 <a href="service-details.html" class="stretched-link">
-                                    <h3>Asperiores Commodit</h3>
+                                    <h3>Eco Friendly Building Blocks</h3>
                                 </a>
-                                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea
-                                    fuga sit provident adipisci neque.</p>
-                                <a href="service-details.html" class="stretched-link"></a>
+                                <p>Innovative building materials made from recycled oils, promoting sustainable construction practices.</p>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
-
+        
                 </div>
-
+        
             </div>
-
-        </section><!-- /Alt Services Section -->
+        
+        </section>
+        <!-- /Alt Services Section -->
 
         <!-- Features Section -->
-        <section id="features" class="features section">
+        {{-- <section id="features" class="features section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -496,15 +496,16 @@
 
             </div>
 
-        </section><!-- /Features Section -->
+        </section> --}}
+        <!-- /Features Section -->
 
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Reviews</h2>
+                <p>Our Clients were satisfied availing our service!</p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -542,8 +543,8 @@
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
                                         alt="">
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
+                                    <h3>Maria Perez</h3>
+                                    <h4>Small Business Owner</h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -551,9 +552,9 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                            Maecen aliquam, risus at semper.</span>
+                                        <span>This platform has transformed how we handle used cooking oil. We not only
+                                            earn extra income but also contribute to a cleaner environment. A
+                                            win-win!</span>
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -565,8 +566,8 @@
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
                                         alt="">
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
+                                    <h3>John Smith</h3>
+                                    <h4>Environmental Advocate</h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -574,9 +575,8 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem
-                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
-                                            noster fugiat irure amet legam anim culpa.</span>
+                                        <span>The initiative by the LGU to recycle UCO is commendable. It's heartening
+                                            to see local businesses contributing to sustainability.</span>
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -588,8 +588,8 @@
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
                                         alt="">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
+                                    <h3>Anna Lee</h3>
+                                    <h4>Restaurant Manager</h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -597,9 +597,8 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                            quem veniam duis minim tempor labore quem eram duis noster aute amet eram
-                                            fore quis sint minim.</span>
+                                        <span>We've been able to dispose of our used cooking oil responsibly and even
+                                            make some extra money. This platform is fantastic for SMEs.</span>
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -611,8 +610,8 @@
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
                                         alt="">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
+                                    <h3>Michael Brown</h3>
+                                    <h4>Local Government Official</h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -620,9 +619,9 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export
-                                            minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt
-                                            elit fore quem dolore labore illum veniam.</span>
+                                        <span>This initiative has not only boosted our revenue but also placed Valencia
+                                            City at the forefront of green innovation. Proud to be a part of this
+                                            project.</span>
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -634,8 +633,8 @@
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
                                         alt="">
-                                    <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
+                                    <h3>Emily Davis</h3>
+                                    <h4>Investor</h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -643,9 +642,9 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
-                                            tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum
-                                            fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                                        <span>Investing in this platform was a no-brainer. It's socially responsible and
+                                            has great potential for growth. Highly recommend supporting this
+                                            cause.</span>
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -653,6 +652,7 @@
                         </div><!-- End testimonial item -->
 
                     </div>
+
                     <div class="swiper-pagination"></div>
                 </div>
 
@@ -660,7 +660,7 @@
 
         </section><!-- /Testimonials Section -->
 
-        <!-- Portfolio Section -->
+        {{-- <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio section">
 
             <!-- Section Title -->
@@ -870,22 +870,22 @@
 
             </div>
 
-        </section><!-- /Portfolio Section -->
+        </section><!-- /Portfolio Section --> --}}
 
         <!-- Team Section -->
-        <section id="team" class="team section">
+        {{-- <section id="team" class="team section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Team</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>Meet the team behind of this platform</p>
             </div><!-- End Section Title -->
 
             <div class="container">
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
+                    <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
                         data-aos-delay="100">
                         <div class="team-member">
                             <div class="member-img">
@@ -898,8 +898,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Executive Officer</span>
+                                <h4>Salvador Ligayao</h4>
+                                <span>Backend Developer</span>
                             </div>
                         </div>
                     </div><!-- End Team Member -->
@@ -917,8 +917,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
+                                <h4>Amiel Jay Ocier</h4>
+                                <span>Backend Developer</span>
                             </div>
                         </div>
                     </div><!-- End Team Member -->
@@ -936,8 +936,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>CTO</span>
+                                <h4>Zsaffina Pearl Gepana</h4>
+                                <span>Project Manager</span>
                             </div>
                         </div>
                     </div><!-- End Team Member -->
@@ -955,20 +955,41 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
+                                <h4>Jayson Tadayca</h4>
+                                <span>Frontend Developer</span>
                             </div>
                         </div>
                     </div><!-- End Team Member -->
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Jayson Tadayca</h4>
+                                <span>Frontend Developer</span>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
 
                 </div>
 
             </div>
 
-        </section><!-- /Team Section -->
+        </section> --}}
+        <!-- /Team Section -->
 
         <!-- Pricing Section -->
-        <section id="pricing" class="pricing section">
+        {{-- <section id="pricing" class="pricing section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -1031,7 +1052,8 @@
 
             </div>
 
-        </section><!-- /Pricing Section -->
+        </section> --}}
+        <!-- /Pricing Section -->
 
         <!-- Faq Section -->
         <section id="faq" class="faq section">
@@ -1039,7 +1061,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>Find answers to common questions about our platform and services</p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -1047,12 +1069,14 @@
                 <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-5 d-flex">
                         <i class="bi bi-question-circle"></i>
-                        <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+                        <h4>What is the purpose of this platform?</h4>
                     </div>
                     <div class="col-lg-7">
                         <p>
-                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                            curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            Our platform allows SMEs to sell their used cooking oil (UCO) to the local government unit
+                            (LGU), which collects, processes, and resells the purified UCO for industrial use, such as
+                            biodiesel fuels. This initiative promotes sustainability and generates additional income for
+                            SMEs.
                         </p>
                     </div>
                 </div><!-- End F.A.Q Item-->
@@ -1060,13 +1084,13 @@
                 <div class="row faq-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-5 d-flex">
                         <i class="bi bi-question-circle"></i>
-                        <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+                        <h4>How can SMEs benefit from this platform?</h4>
                     </div>
                     <div class="col-lg-7">
                         <p>
-                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
-                            laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Est pellentesque elit ullamcorper dignissim.
+                            SMEs can earn extra income by selling their used cooking oil instead of disposing of it
+                            irresponsibly. This helps them contribute to a greener environment while also gaining
+                            financial benefits.
                         </p>
                     </div>
                 </div><!-- End F.A.Q Item-->
@@ -1074,13 +1098,13 @@
                 <div class="row faq-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="col-lg-5 d-flex">
                         <i class="bi bi-question-circle"></i>
-                        <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+                        <h4>What environmental benefits does this platform offer?</h4>
                     </div>
                     <div class="col-lg-7">
                         <p>
-                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                            elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                            pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
+                            By recycling used cooking oil, the platform reduces pollution and supports sustainability
+                            efforts. The purified UCO can be used as biodiesel, which is a cleaner alternative to
+                            traditional fossil fuels.
                         </p>
                     </div>
                 </div><!-- End F.A.Q Item-->
@@ -1088,13 +1112,13 @@
                 <div class="row faq-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="col-lg-5 d-flex">
                         <i class="bi bi-question-circle"></i>
-                        <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+                        <h4>How does the LGU benefit from this platform?</h4>
                     </div>
                     <div class="col-lg-7">
                         <p>
-                            Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium
-                            sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio.
-                            Repellat assumenda soluta sunt pariatur error doloribus fuga.
+                            The LGU generates revenue from the sale of purified UCO and establishes itself as a leader
+                            in green initiatives. This can also improve the public image of the LGU and attract more
+                            support for its environmental programs.
                         </p>
                     </div>
                 </div><!-- End F.A.Q Item-->
@@ -1102,18 +1126,19 @@
                 <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="col-lg-5 d-flex">
                         <i class="bi bi-question-circle"></i>
-                        <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+                        <h4>Why should investors support this platform?</h4>
                     </div>
                     <div class="col-lg-7">
                         <p>
-                            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
-                            ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
-                            bibendum est. Purus gravida quis blandit turpis cursus in
+                            Investors can back a socially responsible and potentially profitable platform that addresses
+                            environmental issues while creating economic opportunities for SMEs and the LGU. This can
+                            lead to long-term returns and positive community impact.
                         </p>
                     </div>
                 </div><!-- End F.A.Q Item-->
 
             </div>
+
 
         </section><!-- /Faq Section -->
 
@@ -1123,7 +1148,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>Get in touch with us!</p>
             </div><!-- End Section Title -->
 
             <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
@@ -1135,7 +1160,7 @@
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
                                 <h3>Address</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>Syre Highway, Malaybalay City, Bukidnon</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -1143,7 +1168,7 @@
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Call Us</h3>
-                                <p>+1 5589 55488 55</p>
+                                <p>+63 912 3456 789</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -1151,7 +1176,7 @@
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p>info@example.com</p>
+                                <p>RecycOIL@buksu.edu.com</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -1205,7 +1230,7 @@
 
         <div class="container">
             <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">Name.</strong> <span>All Rights
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">BukSU.</strong> <span>All Rights
                         Reserved</span></p>
             </div>
             <div class="social-links d-flex justify-content-center">
@@ -1219,7 +1244,7 @@
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">Best Team Ever</a>
             </div>
         </div>
 
@@ -1246,4 +1271,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

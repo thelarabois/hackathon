@@ -49,6 +49,11 @@ body {
   font-family: var(--default-font);
 }
 
+.col-lg-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -677,11 +682,11 @@ section,
 }
 
 .clients .client-logo img {
-  padding: 20px 40px;
-  max-width: 90%;
+  padding: 20px 10px;
+  max-width: 100%;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+  /* opacity: 0.5; */
+  /* filter: grayscale(100); */
 }
 
 .clients .client-logo img:hover {
