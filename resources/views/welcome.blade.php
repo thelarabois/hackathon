@@ -139,6 +139,57 @@
             </div>
 
         </section><!-- /Clients Section -->
+        
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p>Our platform is dedicated to transforming the way used cooking oil (UCO) is managed and recycled. By connecting households, businesses, and collection services, we provide a seamless and efficient solution for the proper disposal and recycling of UCO, promoting environmental sustainability and resource efficiency.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item position-relative">
+                        <i class="bi bi-activity"></i>
+                        <h4><a href="" class="stretched-link">Used oil avaibility data</a></h4>
+                        <p>Our platform provides comprehensive Used Oil Availability Data Services, offering real-time insights into the collection and availability of used cooking oil (UCO). This service is designed for businesses, waste management companies, and recyclers looking to optimize their operations and make informed decisions.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative">
+                        <i class="bi bi-bounding-box-circles"></i>
+                        <h4><a href="" class="stretched-link">Platform</a></h4>
+                        <p>Our platform revolutionizes the management and recycling of used cooking oil (UCO) by providing a seamless, efficient, and data-driven solution for households, businesses, and waste management companies. We connect all stakeholders in the UCO lifecycle, facilitating proper disposal, collection, and recycling to promote environmental sustainability.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative">
+                        <i class="bi bi-calendar4-week"></i>
+                        <h4><a href="" class="stretched-link">Customer Support</a></h4>
+                        <p>Our platform offers comprehensive customer support to ensure a seamless and satisfying user experience. Access a dedicated help center with FAQs, live chat, and a support ticket system for quick assistance. Our knowledgeable and friendly support team is always ready to help with any issues or questions, ensuring you get the most out of our used oil management services.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <i class="bi bi-broadcast"></i>
+                        <h4><a href="" class="stretched-link">Marketplace</a></h4>
+                        <p>Our platform's Marketplace Service connects users with a variety of eco-friendly products made from recycled used cooking oil. Discover and purchase items like biodiesel, soaps, and detergents directly from local artisans and sustainable businesses. Support the circular economy and make greener choices effortlessly through our user-friendly marketplace.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+
+        </section><!-- /Services Section -->
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -269,57 +320,6 @@
             </div>
 
         </section><!-- /Stats Section -->
-
-        <!-- Services Section -->
-        <section id="services" class="services section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item position-relative">
-                            <i class="bi bi-activity"></i>
-                            <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
-                            <i class="bi bi-bounding-box-circles"></i>
-                            <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
-                            <i class="bi bi-calendar4-week"></i>
-                            <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item position-relative">
-                            <i class="bi bi-broadcast"></i>
-                            <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                </div>
-
-            </div>
-
-        </section><!-- /Services Section -->
 
         <!-- Alt Services Section -->
         <section id="alt-services" class="alt-services section">
